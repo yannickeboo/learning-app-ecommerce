@@ -38,11 +38,12 @@ Login the database :
 mysql -u root -p
 ```
 ```
-$ mysql
+
  CREATE DATABASE ecomdb;
  CREATE USER 'ecomuser'@'localhost' IDENTIFIED BY 'ecompassword';
  GRANT ALL PRIVILEGES ON *.* TO 'ecomuser'@'localhost';
  FLUSH PRIVILEGES;
+ exit
 ```
 
 > ON a multi-node setup remember to provide the IP address of the web server here: `'ecomuser'@'web-server-ip'`
