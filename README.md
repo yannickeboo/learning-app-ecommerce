@@ -33,7 +33,10 @@ sudo firewall-cmd --reload
 ```
 
 3. Configure Database
-
+Login the database :
+```
+mysql -u root -p
+```
 ```
 $ mysql
 MariaDB > CREATE DATABASE ecomdb;
